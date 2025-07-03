@@ -7,6 +7,7 @@ import { WashingtonComponent } from './pages/washington/washington.component';
 import { GmailComponent } from './pages/gmail/gmail.component';
 import { PBCupsComponent } from './pages/pb-cups/pb-cups.component';
 import { GeeblesComponent } from './pages/geebles/geebles.component';
+import { QuizComponent } from './pages/quiz/quiz.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
       { path: 'gmail', component: GmailComponent},
       { path: 'pb-cups', component: PBCupsComponent},
       { path: 'geebles', component: GeeblesComponent},
+      { path: 'quiz', component: QuizComponent}
     ]
   },
   { path: '**', redirectTo: ''}
