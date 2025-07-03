@@ -1,0 +1,30 @@
+<div class="card mx-auto" style="max-width: 600px;">
+  <div class="card-body" *ngIf="!completed">
+    <h4 class="card-title mb-3">Question {{ current + 1 }} of {{ questions.length }}</h4>
+    <p class="card-text">{{ questions[current].question }}</p>
+    <ul class="list-group mb-3">
+      <li
+        class="list-group-item"
+        *ngFor="let opt of questions[current].options; let i = index"
+        [class.active]="answers[current] === i"
+        (click)="selectOption(i)"
+        style="cursor: pointer;"
+      >
+        {{ opt }}
+      </li>
+    </ul>
+    <button
+      class="btn btn-primary"
+      [disabled]="answers[current] === null"
+      (click)="next()"
+    >
+      {{ current < questions.length - 1 ? 'Next' : 'Submit' }}
+    </button>
+  </div>
+
+  <div class="card-body text-center" *ngIf="completed">
+    <h3 class="mb-3">Quiz Complete!</h3>
+    <p class="fs-4">You scored {{ score }} / {{ questions.length }}</p>
+    <button class="btn btn-secondary mt-3" (click)="restart()">Try Again</button>
+  </div>
+</div>

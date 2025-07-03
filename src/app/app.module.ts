@@ -14,6 +14,7 @@ import { GmailComponent } from './pages/gmail/gmail.component';
 import { PBCupsComponent } from './pages/pb-cups/pb-cups.component';
 import { GeeblesComponent } from './pages/geebles/geebles.component';
 import { ShowPibbleComponent } from './shared/show-pibble/show-pibble.component';
+import { QuizComponent } from './pages/quiz/quiz.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ShowPibbleComponent } from './shared/show-pibble/show-pibble.component'
     GmailComponent,
     PBCupsComponent,
     GeeblesComponent,
-    ShowPibbleComponent
+    ShowPibbleComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,
