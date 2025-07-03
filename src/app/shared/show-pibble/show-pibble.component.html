@@ -1,0 +1,5 @@
+<!-- show-pibble.component.html -->
+<div *ngIf="imageUrl$ | async as url; else loading">
+  <img [src]="url" [alt]="type" class="pibble-img"/>
+</div>
+<ng-template #loading>Loading image…</ng-template>

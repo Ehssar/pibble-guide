@@ -1,0 +1,12 @@
+<app-header class="d-flex bg-light justify-content-center mb-4"></app-header>
+<div class="d-flex">
+    <aside class="bg-light sidebar p-3" style="width: 250px;">
+      <app-sidebar></app-sidebar>
+    </aside>
+  
+    <!-- Main content area: full width on xs, 9/12 on md+ -->
+    <main class="flex-grow-1 p-3">
+        <router-outlet></router-outlet>
+    </main>
+</div>
+<app-footer class="d-flex bg-light justify-content-center mt-4"></app-footer>
