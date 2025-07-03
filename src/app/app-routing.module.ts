@@ -7,7 +7,6 @@ import { WashingtonComponent } from './pages/washington/washington.component';
 import { GmailComponent } from './pages/gmail/gmail.component';
 import { PBCupsComponent } from './pages/pb-cups/pb-cups.component';
 import { GeeblesComponent } from './pages/geebles/geebles.component';
-import { Quiz } from '@mui/icons-material';
 import { QuizComponent } from './pages/quiz/quiz.component';
 
 const routes: Routes = [
