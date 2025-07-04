@@ -56,7 +56,7 @@ export class QuizService {
     },
     {
       question: 'If you pick up a pibble by its scruff what pose they hitting?',
-      options: ['The Willem Defoe', 'Spred Eagle', 'Fetal', 'The Tweaker'],
+      options: ['The Willem Defoe', 'Spread Eagle', 'Fetal', 'The Tweaker'],
       correctIndex: 1
     },
     

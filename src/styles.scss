@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+$theme-colors: (
+  "primary":  #FFC4C4,  // soft pastel pink
+  "warning":  #FFF3B0   // pale yellow
+);
+
+// (Optional) if you still want to override body-bg too:
+$body-bg: #FFF8F0;      // off-white cream
+// THEN pull in all of Bootstrap
+@import "~bootstrap/scss/bootstrap";
+// === now override Bootstrap’s CSS custom properties ===
+:root,
+[data-bs-theme="light"] {
+  /* 1. Brand colors */
+  --bs-primary:   #FFC4C4 !important;
+  --bs-secondary: #FFF3B0 !important;
+  --bs-body-bg:   #FFF8F0 !important;  /* your off-white cream */
+
+  /* 2. Rounded corners */
+  --bs-border-radius:      1rem;
+  --bs-btn-border-radius:  1.5rem;
+  --bs-card-border-radius: 1rem;
+
+  /* 3. Softer small shadows */
+  --bs-box-shadow-sm:      0 .125rem .25rem rgba(0, 0, 0, .05);
+
+  /* 4. Friendly font */
+  --bs-font-sans-serif:    "Comic Neue", sans-serif;
+}
